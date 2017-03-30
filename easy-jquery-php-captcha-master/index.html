@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- see tutorial: http://www.jquery4u.com/?p=17043 -->
+<html>
+    <head>
+        <title>Captcha</title>        
+        <script data-main="js/app" src="js/vendor/require.js"></script>
+    </head>
+    <body>
+        <form accept-charset="UTF-8" action="#" class="infusion-form" method="POST" id="captcha-form" name="captcha-form" autocomplete="off">
+            <input name="inf_form_xid" type="hidden" value="0bb6dfd248b68a7f95daec70e6d894cf"><br>
+            <input name="inf_form_name" type="hidden" value="Contact Form"><br>
+            <input name="infusionsoft_version" type="hidden" value="1.51.0.57"><p></p>
+            <div class="infusion-field">
+                <label for="inf_field_FirstName">First Name *</label><br>
+                <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text">
+            </div>
+            <div class="infusion-field">
+                <label for="inf_field_LastName">Last Name *</label><br>
+                <input class="infusion-field-input-container" id="inf_field_LastName" name="inf_field_LastName" type="text">
+            </div>
+            <div class="infusion-field">
+                <label for="inf_field_Email">Email *</label><br>
+                <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text">
+            </div>
+            <div class="infusion-field">
+                <label for="inf_field_Phone1">Phone 1</label><br>
+                <input class="infusion-field-input-container" id="inf_field_Phone1" name="inf_field_Phone1" type="text">
+            </div>
+            <div class="infusion-field">
+                <label for="inf_custom_Comments">How Can I Help?</label><br>
+                <input class="infusion-field-input-container" id="inf_custom_Comments" name="inf_custom_Comments" type="text">
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <label class="" for="captcha">*Please enter the verication code shown below.</label>
+                    <div id="captcha-wrap">
+                        <img src="img/refresh.jpg" alt="refresh captcha" id="refresh-captcha" /> <img src="php/newCaptcha.php" alt="" id="captcha" />
+                    </div>
+                    <input class="narrow text input infusion-field-input-container" id="captcha" name="captcha" type="text" placeholder="Verification Code">
+                </div>
+            </div>
+
+            <div class="infusion-submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <!-- <form action="#" method="post" id="captcha-form" name="captcha-form" autocomplete="off" class="form-horizontal">
+
+            <fieldset>
+                <div class="control-group">
+                    <div class="controls">
+                    <label class="inline" for="firstname">*First Name</label>
+                    <input class="normal text input" name="firstname" type="text" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                    <label class="inline" for="lastname">*Last Name</label>
+                    <input class="normal text input" name="lastname" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                    <label class="inline" for="email">*Email</label>
+                    <input class="normal email input" name="email" type="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="" for="captcha">*Please enter the verication code shown below.</label>
+                        <div id="captcha-wrap">
+                            <img src="img/refresh.jpg" alt="refresh captcha" id="refresh-captcha" /> <img src="php/newCaptcha.php" alt="" id="captcha" />
+                        </div>
+                        <input class="narrow text input" id="captcha" name="captcha" type="text" placeholder="Verification Code">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input class="btn primary" type="submit" value="Test Captcha">
+                    </div>
+                </div>
+            </fieldset>
+
+        </form> -->
+
+    </body>
+</html>
